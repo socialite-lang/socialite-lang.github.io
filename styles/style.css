@@ -11,8 +11,10 @@ body{font-size:15px}
 .navbar-brand{font-size:16px;font-weight:500}
 .navbar-nav{font-size:15px;font-weight:500}
 .home-banner{font-size:28px;text-align:center;color:#fff;background-image:url("http://seojiwon.github.io/socialite/images/bg-darkblue.png");min-height:60px;margin-top:-9px;padding-left:100px;padding-right:100px;padding-top:20px;padding-bottom:55px;border-top:1px solid #304050;border-bottom:7px solid #b0c0d0}
-.home-banner h1{font-size:94px;font-weight:620;background:-webkit--webkit-linear-gradient(45deg, #fff, #a0b8cf);background:-webkit--moz-linear-gradient(45deg, #fff, #a0b8cf);background:-webkit--o-linear-gradient(45deg, #fff, #a0b8cf);background:-webkit--ms-linear-gradient(45deg, #fff, #a0b8cf);background:-webkit-linear-gradient(45deg, #fff, #a0b8cf);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.home-banner h2{font-size:40px;font-weight:200;background:-webkit--webkit-linear-gradient(45deg, #fff, #607080);background:-webkit--moz-linear-gradient(45deg, #fff, #607080);background:-webkit--o-linear-gradient(45deg, #fff, #607080);background:-webkit--ms-linear-gradient(45deg, #fff, #607080);background:-webkit-linear-gradient(45deg, #fff, #607080);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.2}
+.home-banner h1{font-size:94px;font-weight:620}
+#	background: -webkit-linear-gradient(180deg,#ffffff,#A0B8CF){-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.home-banner h2{font-size:40px;font-weight:200}
+#	background: -webkit-linear-gradient(180deg,#ffffff,#607080){-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.2}
 .home-banner .container{width:640px;padding-top:30px}
 .home-banner .btn img{vertical-align:middle;padding-bottom:3px}
 .home-banner .btn{padding:5px 22px;font-size:22px;font-weight:240;color:#fff;-webkit-border-radius:24px;-moz-border-radius:24px;-webkit-border-radius:24px;border-radius:24px;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 5px rgba(0,0,0,0.25);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 5px rgba(0,0,0,0.25);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 5px rgba(0,0,0,0.25);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 5px rgba(0,0,0,0.25);-webkit-transition:none;-moz-transition:none;-webkit-transition:none;-moz-transition:none;-o-transition:none;-ms-transition:none;transition:none;text-shadow:0 -1px 0 rgba(0,0,0,0.25)}

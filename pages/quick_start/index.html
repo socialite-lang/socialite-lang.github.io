@@ -229,6 +229,7 @@ A distributed table can be declared using a location operator [] in its first co
 If a range operator is applied in the partitioning column as in Foo table above, then tuples having first column values within a certain range are stored in a same partition.  For example, for the Foo table, if there are two machines in the cluster, tuples with values from 0 to 50 in the first column are stored in one machine, and the rest tuples are stored in another machine.</p>
 <p><strong>Hash-based partitioning</strong>
 If the location operator is used without the range operator -- as in Bar and Qux table above -- we apply hash-based partitioning where the hash of the first column value is used to determine the location to store a given tuple.</p>
+<p>As opposed to distributed tables, tables that are declared without the location operator are machine-local tables (or simply local tables). Local tables are </p>
 <h3 id="-b-distributed-rules-b-"><b>Distributed Rules</b></h3>
 </div>
 </article>
@@ -238,7 +239,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-03-13T04:24:13.984Z
+				This website was last updated at 2014-03-13T20:37:30.339Z
 			</p>
 		</footer>  -->
 		<footer>
