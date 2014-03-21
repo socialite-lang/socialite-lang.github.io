@@ -149,7 +149,7 @@ Python code
 <span class="prompt">&gt;&gt;&gt; </span>    <span class="keyword">print</span> n, f
 John    Tom</code></pre>
 <p>The above SociaLite query creates a two-column table <em>Friend</em>, inserts one tuple {&quot;John&quot;, &quot;Tom&quot;} into the table, and iterates over the table to print the tuples.</p>
-<h3 id="-b-tables-b-"><b>Tables</b></h3>
+<h3 id="-a-class-anchor-name-tables-a-b-tables-b-"><a class="anchor" name="tables"></a><b>Tables</b></h3>
 <p>In SociaLite, data is stored in (in-memory) tables, which can be declared as following.</p>
 <pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span>`FriendNum(String name, int num).`</code></pre>
 <p>This declares a table <em>FriendNum</em> that has two columns with String and int type.  Column types can be primitive types (int, long, float, and double), object types (String, Utf8, and user-defined types), and array types (int[], String[], etc). Notice that table declarations must end with a dot (.).</p>
@@ -178,6 +178,10 @@ John    Tom</code></pre>
 <span class="prompt">&gt;&gt;&gt; </span><span class="comment"># then, run the following rule</span>
 <span class="prompt">&gt;&gt;&gt; </span>`Foaf(i, ff) :- Friend(i, f), Friend(f, ff).`</code></pre>
 <p>In the above rule, the Friend table in the rule body -- right-hand side of :- -- is joined with Friend table itself, and the result is inserted into the Foaf table in the rule head -- left-hand side of :- . More specifically, the term <em>Friend(i,f)</em> iterates each tuple from Friend table, and assigns to variable <em>i</em>, <em>f</em>; for the assigned value of <em>f</em>, matching tuples from Friend table are retrieved and assigned to variable <em>ff</em>, and the result tuple {i, ff} is added to Foaf table.  If the Friend table contains three tuples {&#39;a&#39;,&#39;b&#39;}, {&#39;b&#39;,&#39;c&#39;}, {&#39;b&#39;,&#39;d&#39;}, then the following two tuples, {&#39;a&#39;,&#39;c&#39;} and {&#39;a&#39;,&#39;d&#39;}, are inserted to Foaf table. In other words, the above rule finds friends-of-friends and store them in the Foaf table.</p>
+<p>Selecting particular tuples can be done like following.</p>
+<pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span>`TomsFoaf(String f) indexby f.`
+<span class="prompt">&gt;&gt;&gt; </span>`TomsFoaf(ff) :- Friend(<span class="string">"Tom"</span>, f), Friend(f, ff).`</code></pre>
+<p>Here in <em>Friend(&quot;Tom&quot;, f)</em>, we select only the tuples whose first column value exactly matches &quot;Tom&quot;.  For each of such tuples, we find matching tuples in <em>Friend(f, ff)</em>, and add Tom&#39;s friends of friends in TomsFoaf table.</p>
 <p>In the following example, Foaf table stores friends as well as friends-of-friends.</p>
 <pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span>`Foaf(i, f) :- Friend(i, f).
 <span class="prompt">&gt;&gt;&gt; </span> Foaf(i, ff) :- Friend(i, f), Friend(f, ff).`</code></pre>
@@ -217,20 +221,34 @@ $<span class="built_in">max</span>(n)/<span class="built_in">min</span>(n): aggr
 $<span class="built_in">sum</span>(n): aggregate <span class="function"><span class="keyword">function</span> <span class="title">summing</span> <span class="title">up</span></span></code></pre>
 <h3 id="-b-starting-a-socialite-shell-cluster-b-"><b>Starting a SociaLite Shell (Cluster)</b></h3>
 <p>The SociaLite programs can run on a cluster running SociaLite servers. Setting up a SociaLite cluster is described in <a href="../install">install SociaLite</a>. Once the cluster is set up, SociaLite shell can be executed with <code>-d</code> option to connect to the cluster, like <code>bin/socialite -d</code>.  To run a script in the cluster, pass the script name like <code>bin/socialite -d script-name.py</code>.</p>
-<h3 id="-b-distributed-tables-b-"><b>Distributed Tables</b></h3>
+<h3 id="-a-class-anchor-name-dist-tables-a-b-distributed-tables-b-"><a class="anchor" name="dist-tables"></a><b>Distributed Tables</b></h3>
 <p>SociaLite supports distributed tables whose partitions are stored across cluster machines.
 A distributed table can be declared using a location operator [] in its first column as in following.</p>
 <pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span>`Foo[int i:<span class="number">0.</span><span class="number">.100</span>](double d).
 <span class="prompt">&gt;&gt;&gt; </span> Bar[int a]((int b)).
-<span class="prompt">&gt;&gt;&gt; </span> Qux[String s](int b).`
-<span class="prompt">&gt;&gt;&gt; </span><span class="comment"># only first column can be the partitioning column</span></code></pre>
-<p>A distributed table stores tuples in one of its partitions -- the values of the partitioning column of the tuples determine which partition the tuples are stored.</p>
+<span class="prompt">&gt;&gt;&gt; </span> Qux[String s](int b).`</code></pre>
+<p>A distributed table stores tuples in one of its partitions -- the values of the partitioning column (first column) of the tuples determine which partition the tuples are stored in.</p>
 <p><strong>Range-based partitioning</strong>
-If a range operator is applied in the partitioning column as in Foo table above, then tuples having first column values within a certain range are stored in a same partition.  For example, for the Foo table, if there are two machines in the cluster, tuples with values from 0 to 50 in the first column are stored in one machine, and the rest tuples are stored in another machine.</p>
+If a range operator is applied as in Foo table above, then tuples having first column values within a certain range are stored in a same partition.  For example, for the Foo table, if there are two machines in the cluster, tuples with values from 0 to 50 in the first column are stored in one machine, and the rest tuples are stored in another machine.</p>
 <p><strong>Hash-based partitioning</strong>
 If the location operator is used without the range operator -- as in Bar and Qux table above -- we apply hash-based partitioning where the hash of the first column value is used to determine the location to store a given tuple.</p>
-<p>As opposed to distributed tables, tables that are declared without the location operator are machine-local tables (or simply local tables). Local tables are </p>
-<h3 id="-b-distributed-rules-b-"><b>Distributed Rules</b></h3>
+<p>As opposed to distributed tables, tables that are declared without the location operator are machine-local tables (or simply local tables). Unlike distributed tables whose partitions are stored across cluster machines, partitions of local tables are entirely stored in individual machine. In other words, distributed tables have a single instance that is stored across cluster machines, and local tables have multiple instances -- one per each machine. Local tables are only accessed from the machine the tables are stored -- more details are explained in <a href="#dist-rules">Distributed Rules</a>.</p>
+<h3 id="-a-class-anchor-name-dist-rules-a-b-distributed-rules-b-"><a class="anchor" name="dist-rules"></a><b>Distributed Rules</b></h3>
+<p>Rules that are accessing one or more distributed tables are distributed rules. An example of a distributed is shown in following.</p>
+<pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span>`Friend[String i]((String f)).
+<span class="prompt">&gt;&gt;&gt; </span> Foaf[String i]((String ff)).`
+<span class="prompt">&gt;&gt;&gt; </span>
+<span class="prompt">&gt;&gt;&gt; </span>`Foaf[i](ff) :- Friend[i](f), Friend[f](ff).`</code></pre>
+<p>We declare two distributed tables (with nested second columns) and we compute friends-of-friends with the distributed tables. The rule requires distributed join operation; in the rule body, the two terms -- <em>Friend<a href="f">i</a></em> and <em>Friend<a href="ff">f</a></em> -- have different values in the partitioning column -- <em>i</em> and <em>f</em>. Hence tuples from the first term might need to be sent to other machines for the join operation. That is, tuple {i,f} stored in one machine (determined by <em>i</em>) needs to be transfered to another machine, where tuple {f, ff} is stored. Then the result tuple {i, ff} needs to be transfered back to be stored to Foaf.</p>
+<p>Users may want to re-order the terms in the rule body to minimize data communication for better performance. For example, in the following example, </p>
+<pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span>`TriangleCount[int i:<span class="number">0.</span><span class="number">.0</span>](int cnt).`
+<span class="prompt">&gt;&gt;&gt; </span>
+<span class="prompt">&gt;&gt;&gt; </span><span class="comment"># Rule 1</span>
+<span class="prompt">&gt;&gt;&gt; </span>`TriangleCount[<span class="number">0</span>]($inc(<span class="number">1</span>)) :- Friend[x](y), Friend[y](z), Friend[x](z).` 
+<span class="prompt">&gt;&gt;&gt; </span>
+<span class="prompt">&gt;&gt;&gt; </span><span class="comment"># Rule 2</span>
+<span class="prompt">&gt;&gt;&gt; </span>`TriangleCount[<span class="number">0</span>]($inc(<span class="number">1</span>)) :- Friend[x](y), Friend[x](z), Friend[y](z).`</code></pre>
+<p>The order of the terms in the rule body can be</p>
 </div>
 </article>
 		</section>
@@ -239,7 +257,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-03-13T20:57:41.238Z
+				This website was last updated at 2014-03-21T23:28:29.069Z
 			</p>
 		</footer>  -->
 		<footer>
