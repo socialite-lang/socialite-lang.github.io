@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>SociaLite</title>
-	<link href="http://seojiwon.github.io/socialite/atom.xml" rel="self"/>
-	<link href="http://seojiwon.github.io/socialite"/>
-	<updated>2014-03-21T23:35:12.044Z</updated>
-	<id>http://seojiwon.github.io/socialite</id>
+	<link href="http://socialite-lang.github.io/atom.xml" rel="self"/>
+	<link href="http://socialite-lang.github.io"/>
+	<updated>2014-03-24T01:06:28.855Z</updated>
+	<id>http://socialite-lang.github.io</id>
 	<author>
 		<name>Jiwon Seo</name>
 		<email>seojiwon@gmail.com</email>
@@ -13,9 +13,9 @@
 	
 		<entry>
 			<title>This is a Hello Blog Post</title>
-			<link href="http://seojiwon.github.io/socialite//posts/hello"/>
-			<updated>2014-03-21T23:35:12.856Z</updated>
-			<id>http://seojiwon.github.io/socialite//posts/hello</id>
+			<link href="http://socialite-lang.github.io//posts/hello"/>
+			<updated>2014-03-24T01:06:29.841Z</updated>
+			<id>http://socialite-lang.github.io//posts/hello</id>
 			<content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -41,11 +41,11 @@
 	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
 
 	&lt;!-- Icons --&gt;
-	&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/favicon.ico&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://socialite-lang.github.io/images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
 
 	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
 	&lt;!--[if lt IE 9]&gt;
@@ -54,7 +54,7 @@
 
 	&lt;!-- Styles --&gt;
 	&lt;!--&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/default.css&quot; /&gt;--&gt;
-	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seojiwon.github.io/socialite/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seojiwon.github.io/socialite/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seojiwon.github.io/socialite/styles/default.css&quot; /&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://socialite-lang.github.io/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://socialite-lang.github.io/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://socialite-lang.github.io/styles/default.css&quot; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
 	&lt;!-- Menu --&gt;
@@ -66,7 +66,7 @@
 					&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
 					&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
 				&lt;/button&gt;
-				&lt;a class=&quot;navbar-brand&quot; href=&quot;http://seojiwon.github.io/socialite/&quot;&gt;SociaLite&lt;/a&gt;
+				&lt;a class=&quot;navbar-brand&quot; href=&quot;http://socialite-lang.github.io/&quot;&gt;SociaLite&lt;/a&gt;
 			&lt;/div&gt;
 			&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
 				&lt;ul class=&quot;nav navbar-nav&quot;&gt;
@@ -76,7 +76,7 @@
 							about=&quot;/pages/news&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/news&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/news&quot; property=&quot;dc:title&quot;&gt;
 								News
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -86,7 +86,7 @@
 							about=&quot;/pages/install&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/install&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/install&quot; property=&quot;dc:title&quot;&gt;
 								Install
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -96,7 +96,7 @@
 							about=&quot;/pages/quick_start&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/quick_start&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/quick_start&quot; property=&quot;dc:title&quot;&gt;
 								Quick Start
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -106,7 +106,7 @@
 							about=&quot;/pages/documentation&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/documentation&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/documentation&quot; property=&quot;dc:title&quot;&gt;
 								Documentation
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -116,7 +116,7 @@
 							about=&quot;/pages/support&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/support&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/support&quot; property=&quot;dc:title&quot;&gt;
 								Support
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -126,7 +126,7 @@
 							about=&quot;/pages/about&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/about&quot; property=&quot;dc:title&quot;&gt;
 								About
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -163,7 +163,7 @@
 		&lt;!-- &lt;footer&gt;
 			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-03-21T23:35:12.044Z
+				This website was last updated at 2014-03-24T01:06:28.855Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
@@ -175,7 +175,7 @@
 
 	&lt;!-- Scripts --&gt;
 	&lt;!--&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/script.js&quot;&gt;&lt;/script&gt; --&gt;
-	&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seojiwon.github.io/socialite/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seojiwon.github.io/socialite/scripts/script.js&quot;&gt;&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://socialite-lang.github.io/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://socialite-lang.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
@@ -183,9 +183,9 @@
 	
 		<entry>
 			<title>This is a Goodbye Blog Post</title>
-			<link href="http://seojiwon.github.io/socialite//posts/bye"/>
-			<updated>2014-03-21T23:35:12.812Z</updated>
-			<id>http://seojiwon.github.io/socialite//posts/bye</id>
+			<link href="http://socialite-lang.github.io//posts/bye"/>
+			<updated>2014-03-24T01:06:29.797Z</updated>
+			<id>http://socialite-lang.github.io//posts/bye</id>
 			<content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
@@ -211,11 +211,11 @@
 	&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
 
 	&lt;!-- Icons --&gt;
-	&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/favicon.ico&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
-		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;http://seojiwon.github.io/socialite/images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
+	&lt;link rel=&quot;shortcut icon&quot; href=&quot;http://socialite-lang.github.io/images/icons/favicon.ico&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-144-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-114-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-72-precomposed.png&quot;&gt;
+		&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;http://socialite-lang.github.io/images/icons/apple-touch-icon-57-precomposed.png&quot;&gt;
 
 	&lt;!-- Shims: IE6-8 support of HTML5 elements --&gt;
 	&lt;!--[if lt IE 9]&gt;
@@ -224,7 +224,7 @@
 
 	&lt;!-- Styles --&gt;
 	&lt;!--&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;/styles/default.css&quot; /&gt;--&gt;
-	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seojiwon.github.io/socialite/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seojiwon.github.io/socialite/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://seojiwon.github.io/socialite/styles/default.css&quot; /&gt;
+	&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://socialite-lang.github.io/styles/twitter-bootstrap.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://socialite-lang.github.io/styles/style.css&quot; /&gt;&lt;link  rel=&quot;stylesheet&quot; href=&quot;http://socialite-lang.github.io/styles/default.css&quot; /&gt;
 &lt;/head&gt;
 &lt;body&gt;
 	&lt;!-- Menu --&gt;
@@ -236,7 +236,7 @@
 					&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
 					&lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
 				&lt;/button&gt;
-				&lt;a class=&quot;navbar-brand&quot; href=&quot;http://seojiwon.github.io/socialite/&quot;&gt;SociaLite&lt;/a&gt;
+				&lt;a class=&quot;navbar-brand&quot; href=&quot;http://socialite-lang.github.io/&quot;&gt;SociaLite&lt;/a&gt;
 			&lt;/div&gt;
 			&lt;div class=&quot;navbar-collapse collapse&quot;&gt;
 				&lt;ul class=&quot;nav navbar-nav&quot;&gt;
@@ -246,7 +246,7 @@
 							about=&quot;/pages/news&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/news&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/news&quot; property=&quot;dc:title&quot;&gt;
 								News
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -256,7 +256,7 @@
 							about=&quot;/pages/install&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/install&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/install&quot; property=&quot;dc:title&quot;&gt;
 								Install
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -266,7 +266,7 @@
 							about=&quot;/pages/quick_start&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/quick_start&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/quick_start&quot; property=&quot;dc:title&quot;&gt;
 								Quick Start
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -276,7 +276,7 @@
 							about=&quot;/pages/documentation&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/documentation&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/documentation&quot; property=&quot;dc:title&quot;&gt;
 								Documentation
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -286,7 +286,7 @@
 							about=&quot;/pages/support&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/support&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/support&quot; property=&quot;dc:title&quot;&gt;
 								Support
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -296,7 +296,7 @@
 							about=&quot;/pages/about&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://seojiwon.github.io/socialite/pages/about&quot; property=&quot;dc:title&quot;&gt;
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/about&quot; property=&quot;dc:title&quot;&gt;
 								About
 							&lt;/a&gt;
 						&lt;/li&gt;
@@ -333,7 +333,7 @@
 		&lt;!-- &lt;footer&gt;
 			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-03-21T23:35:12.044Z
+				This website was last updated at 2014-03-24T01:06:28.855Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
@@ -345,7 +345,7 @@
 
 	&lt;!-- Scripts --&gt;
 	&lt;!--&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/script.js&quot;&gt;&lt;/script&gt; --&gt;
-	&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seojiwon.github.io/socialite/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://seojiwon.github.io/socialite/scripts/script.js&quot;&gt;&lt;/script&gt;
+	&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://socialite-lang.github.io/vendor/twitter-bootstrap/dist/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;http://socialite-lang.github.io/scripts/script.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </content>
