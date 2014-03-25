@@ -3,7 +3,7 @@
 	<title>SociaLite</title>
 	<link href="http://socialite-lang.github.io/atom.xml" rel="self"/>
 	<link href="http://socialite-lang.github.io"/>
-	<updated>2014-03-25T22:57:40.914Z</updated>
+	<updated>2014-03-25T23:00:26.011Z</updated>
 	<id>http://socialite-lang.github.io</id>
 	<author>
 		<name>Jiwon Seo</name>
@@ -14,7 +14,7 @@
 		<entry>
 			<title>This is a Hello Blog Post</title>
 			<link href="http://socialite-lang.github.io//posts/hello"/>
-			<updated>2014-03-25T22:57:41.681Z</updated>
+			<updated>2014-03-25T23:00:26.838Z</updated>
 			<id>http://socialite-lang.github.io//posts/hello</id>
 			<content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -163,7 +163,7 @@
 		&lt;!-- &lt;footer&gt;
 			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-03-25T22:57:40.914Z
+				This website was last updated at 2014-03-25T23:00:26.011Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
@@ -184,7 +184,7 @@
 		<entry>
 			<title>This is a Goodbye Blog Post</title>
 			<link href="http://socialite-lang.github.io//posts/bye"/>
-			<updated>2014-03-25T22:57:41.642Z</updated>
+			<updated>2014-03-25T23:00:26.794Z</updated>
 			<id>http://socialite-lang.github.io//posts/bye</id>
 			<content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -333,7 +333,7 @@
 		&lt;!-- &lt;footer&gt;
 			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-03-25T22:57:40.914Z
+				This website was last updated at 2014-03-25T23:00:26.011Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
