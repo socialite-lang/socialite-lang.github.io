@@ -187,7 +187,7 @@ John    Tom</code></pre>
 <span class="prompt">&gt;&gt;&gt; </span> Foaf(i, ff) :- Friend(i, f), Friend(f, ff).`</code></pre>
 <p>The first rule adds tuples from Friend table into Foaf table, and the next rule adds friends-of-friends to Foaf table. Basically the result of the two rules are unioned and stored in Foaf table.</p>
 <p>Each rule is evaluated in parallel -- the logical partitions in the first table of the rule body are accessed by multiple cores, which evaluate the rule in parallel.</p>
-<p><strong> Functions and Aggregate Functions </strong></p>
+<h4 id="functions-and-aggregate-functions">Functions and Aggregate Functions</h4>
 <p>SociaLite rules support Python functions. Python functions in rules are prefixed with a dollar ($) sign as in the following example.</p>
 <pre class="highlight"><code class="python"><span class="prompt">&gt;&gt;&gt; </span><span class="decorator">@returns(str)</span>
 <span class="prompt">... </span><span class="function"><span class="keyword">def</span> <span class="title">getLastName</span><span class="params">(fullname)</span>:</span>
@@ -219,6 +219,9 @@ $splitIter(<span class="string">"src-str"</span>, <span class="string">"delim"</
 
 $<span class="built_in">max</span>(n)/<span class="built_in">min</span>(n): aggregate <span class="function"><span class="keyword">function</span> <span class="title">computing</span> <span class="title">max</span>/<span class="title">min</span></span>
 $<span class="built_in">sum</span>(n): aggregate <span class="function"><span class="keyword">function</span> <span class="title">summing</span> <span class="title">up</span></span></code></pre>
+<p>For example, to read comma-separated values in a text file, you can write as following:</p>
+<pre class="highlight"><code class="livecodeserver">&gt;&gt;&gt; `Values(int <span class="operator">a</span>, int b).`
+&gt;&gt;&gt; `Values(<span class="operator">a</span>,b) :- l=<span class="built_in">read</span>(<span class="string">"path/to/file.txt"</span>), (v1,v2)=$<span class="built_in">split</span>(l), <span class="operator">a</span>=$toInt(v1), b=$toInt(v2).`</code></pre>
 <h3 id="-b-starting-a-socialite-shell-cluster-b-"><b>Starting a SociaLite Shell (Cluster)</b></h3>
 <p>The SociaLite programs can run on a cluster running SociaLite servers. Setting up a SociaLite cluster is described in <a href="../install">install SociaLite</a>. Once the cluster is set up, SociaLite shell can be executed with <code>-d</code> option to connect to the cluster, like <code>bin/socialite -d</code>.  To run a script in the cluster, pass the script name like <code>bin/socialite -d script-name.py</code>.</p>
 <h3 id="-a-class-anchor-name-dist-tables-a-b-distributed-tables-b-"><a class="anchor" name="dist-tables"></a><b>Distributed Tables</b></h3>
@@ -248,7 +251,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 <span class="prompt">&gt;&gt;&gt; </span>
 <span class="prompt">&gt;&gt;&gt; </span><span class="comment"># Rule 2</span>
 <span class="prompt">&gt;&gt;&gt; </span>`TriangleCount[<span class="number">0</span>]($inc(<span class="number">1</span>)) :- Friend[x](y), Friend[x](z), Friend[y](z).`</code></pre>
-<p>The order of the terms in the rule body can be</p>
+<p><i>More documentation is coming soon! </i></p>
 </div>
 </article>
 		</section>
@@ -257,7 +260,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-03-28T06:44:02.385Z
+				This website was last updated at 2014-04-12T03:32:38.823Z
 			</p>
 		</footer>  -->
 		<footer>

@@ -133,18 +133,58 @@
 			<br>
 
 <article id="page" class="page">
-	<div class="page-content"><p>Detailed documentations will be added soon! </p>
-<h4 id="-b-table-declarations-b-"><b>Table Declarations</b></h4>
-<h4 id="-b-rule-declarations-b-"><b>Rule Declarations</b></h4>
-<h4 id="-b-function-definition-and-invocation-b-"><b>Function Definition and Invocation</b></h4>
-<h5 id="-b-python-functions-b-"><b>Python Functions </b></h5>
-<h4 id="-b-builtin-functions-b-"><b>Builtin Functions</b></h4>
-<h4 id="-b-example-programs-b-"><b>Example Programs</b></h4>
+	<div class="page-content"><p>SociaLite is a distributed query language for graph analysis and data mining.
+This document describes the syntax and core semantics of SociaLite. 
+For an informal introduction to SociaLite, see <a href="../quick_start">quick start</a>.</p>
+<h3 id="-b-table-of-contents-b-"><b> Table of Contents</b></h3>
 <ul>
-<li>PageRank</li>
-<li>Shortest Paths</li>
-<li>K-Means</li>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#basics">Basics</a><ul>
+<li><a href="#tables">Tables</a></li>
+<li><a href="#rules">Rules</a></li>
 </ul>
+</li>
+<li><a href="#integr">Python Integration</a></li>
+<li><a href="#extending">Extending SociaLite</a></li>
+<li><a href="#advanced">Advanced Topics</a></li>
+<li><a href="#examples">Example Programs</a></li>
+</ul>
+<hr>
+<h2 id="-a-class-anchor-name-intro-a-b-introduction-b-"><a class="anchor" name="intro"></a> <b>Introduction</b></h2>
+<p>SociaLite is based on <a href="http://en.wikipedia.org/wiki/Datalog#cite_note-1">Datalog</a>, 
+hence it supports <a href="http://en.wikipedia.org/wiki/Declarative_programming">declarative programming</a>.
+SociaLite programmers <i>declare</i> distributed in-memory tables; then, SociaLite rules are <i>declared</i> to access the tables, and perform relational operations. The rules are evaluated in parallel on a single multi-core machine as well as on a cluster of multiple machines.
+<br>Aggregation is supported in SociaLite; common aggregate operations such as <i>min</i>, <i>max</i>, and <i>sum</i> are provided as a built-in function, and user-defined functions are also supported.
+<br>SociaLite queries can be embedded in Python programs. The embedded queries are executed against an implicitly declared SociaLite database that stores the declared tables and rules.</p>
+<h2 id="-a-class-anchor-name-basics-a-b-basics-b-"><a class="anchor" name="basics"></a> <b>Basics</b></h2>
+<p>Tables and rules are the basic programming concepts in SociaLite.</p>
+<h3 id="-a-class-anchor-name-tables-a-b-tables-b-"><a class="anchor" name="tables"></a> <b>Tables</b></h3>
+<p>Tables are the primary data structure in SociaLite that stores user data. Tables are stored in memory, possibly distributed across cluster machines. 
+<br>SociaLite has two types of tables -- distributed tables and local tables. Distributed tables are horizontally partitioned tables that are stored across cluster machines. Local tables are tables that are stored entirely on a single machine; individual machines in a cluster stores its own instance of a local table, and the table is only accessible from the machine that owns it. </p>
+<p>A local table is declared with the following syntax:</p>
+<pre class="highlight"><code class="r">Table(type col1, <span class="keyword">...</span> , (type coli, <span class="keyword">...</span>)) opts.</code></pre>
+<p>The <i>type</i> denotes the type of the declared column, which can be either primitive types (int, long, float, and double) or object types (String and user-defined types).
+The parenthesis indicates that the enclosed columns are nested. For example, the following declaration represents a two-column table with the second column nested, representing an adjacency list.</p>
+<pre class="highlight"><code class="python">Edge(int src, (int target)).</code></pre>
+<p>A distributed table is declared with the partitioning operator [ ] applied to the first column as following:</p>
+<pre class="highlight"><code class="r">Table[type col-name1](type col-name2, <span class="keyword">...</span> , (type col-namei, <span class="keyword">...</span>)) opts.</code></pre>
+<p>The declared table is horizontally partitioned (or, <i>sharded</i> with respect to the value of the partitioning column. By default hash-based partition is applied, and range-based partition is also supported.</p>
+<h4 id="-a-class-anchor-name-table-opts-a-b-table-options-b-"><a class="anchor" name="table-opts"></a> <b>Table Options</b></h4>
+<p><i>Table options will be decribed in this section soon!</i></p>
+<h3 id="-a-class-anchor-name-rules-a-b-rules-b-"><a class="anchor" name="rules"></a> <b>Rules</b></h3>
+<p>In SociaLite, programming logic is expressed in rules.
+SociaLite rules are declarative just like SQL queries.</p>
+<h3 id="-b-recursive-rules-b-"><b>Recursive Rules</b></h3>
+<h3 id="-b-functions-b-"><b>Functions </b></h3>
+<h4 id="-b-builtin-functions-b-"><b>Builtin Functions</b></h4>
+<h4 id="-b-user-defined-functions-b-"><b>User-Defined Functions</b></h4>
+<h2 id="-a-class-anchor-name-integr-a-b-python-integration-b-"><a class="anchor" name="integr"></a> <b>Python Integration</b></h2>
+<h2 id="-a-class-anchor-name-extending-a-b-extending-socialite-b-"><a class="anchor" name="extending"></a> <b>Extending SociaLite</b></h2>
+<h2 id="-a-class-anchor-name-advanced-a-b-advanced-topics-b-"><a class="anchor" name="advanced"></a> <b>Advanced Topics</b></h2>
+<h2 id="-a-class-anchor-name-examples-a-b-example-programs-b-"><a class="anchor" name="examples"></a> <b>Example Programs</b></h2>
+<h3 id="pagerank">PageRank</h3>
+<h3 id="shortest-paths">Shortest Paths</h3>
+<h3 id="k-means">K-Means</h3>
 </div>
 </article>
 		</section>
@@ -153,7 +193,7 @@
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-03-28T06:44:02.385Z
+				This website was last updated at 2014-04-12T03:32:38.823Z
 			</p>
 		</footer>  -->
 		<footer>
