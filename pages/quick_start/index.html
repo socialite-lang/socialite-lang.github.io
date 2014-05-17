@@ -251,6 +251,9 @@ If the location operator is used without the range operator -- as in Bar and Qux
 <span class="prompt">&gt;&gt;&gt; </span>
 <span class="prompt">&gt;&gt;&gt; </span><span class="comment"># Rule 2</span>
 <span class="prompt">&gt;&gt;&gt; </span>`TriangleCount[<span class="number">0</span>]($inc(<span class="number">1</span>)) :- Friend[x](y), Friend[x](z), Friend[y](z).`</code></pre>
+<p><strong> Built-in Functions for HDFS </strong></p>
+<p>SociaLite supports reading data from HDFS with the following built-in functions.</p>
+<pre class="highlight"><code class="livecodeserver">$hdfsRead(<span class="string">"path-to-file"</span>): reads <span class="operator">the</span> <span class="built_in">file</span> <span class="built_in">from</span> HDFS <span class="operator">in</span> parallel <span class="operator">and</span> returns <span class="keyword">lines</span>, e.g. l=$hdfsRead(<span class="string">"data.txt"</span>)</code></pre>
 <p><i>More documentation is coming soon! </i></p>
 </div>
 </article>
@@ -260,7 +263,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-05-12T23:49:07.162Z
+				This website was last updated at 2014-05-17T21:21:45.782Z
 			</p>
 		</footer>  -->
 		<footer>
