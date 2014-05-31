@@ -14,10 +14,10 @@
 	<title>Documentation | SociaLite</title>
 	<meta name="description" content="SociaLite, distributed query language for large-scale data analysis." />
 	<meta name="keywords" content="data, graph, analysis, distributed, parallel, query, language" />
-	<meta name="author" content="Jiwon Seo" />
+	<meta name="author" content="SociaLite-Lang" />
 
 	<!-- Output DocPad produced meta elements -->
-	<meta name="generator" content="DocPad v6.59.6" />
+	<meta name="generator" content="DocPad v6.66.0" />
 
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
 	<meta name="viewport" content="width=device-width" />
@@ -35,8 +35,8 @@
 	<![endif]-->
 
 	<!-- Styles -->
-	<!--<link  rel="stylesheet" href="/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="/styles/style.css" /><link  rel="stylesheet" href="/styles/default.css" />-->
-	<link  rel="stylesheet" href="http://socialite-lang.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="http://socialite-lang.github.io/styles/style.css" /><link  rel="stylesheet" href="http://socialite-lang.github.io/styles/default.css" />
+	<!--<link  rel="stylesheet" href="/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="/styles/style.css" /><link  rel="stylesheet" href="/styles/googlecode.css" />-->
+	<link  rel="stylesheet" href="http://socialite-lang.github.io/styles/twitter-bootstrap.css" /><link  rel="stylesheet" href="http://socialite-lang.github.io/styles/style.css" /><link  rel="stylesheet" href="http://socialite-lang.github.io/styles/googlecode.css" />
 </head>
 <body>
 	<!-- Menu -->
@@ -115,6 +115,8 @@
 					
 				</ul>
 			</div><!--/.navbar-collapse -->
+
+			
 		</div>
 	</div>
 
@@ -163,13 +165,14 @@ SociaLite programmers <i>declare</i> distributed in-memory tables; then, SociaLi
 <p>Tables are the primary data structure in SociaLite that stores user data. Tables are stored in memory, possibly distributed across cluster machines. 
 <br>SociaLite has two types of tables -- distributed tables and local tables. Distributed tables are horizontally partitioned tables that are stored across cluster machines. Local tables are tables that are stored entirely on a single machine; individual machines in a cluster stores its own instance of a local table, and the table is only accessible from the machine that owns it. </p>
 <p>A local table is declared with the following syntax:</p>
-<pre class="highlight"><code class="r">Table(type col1, <span class="keyword">...</span> , (type coli, <span class="keyword">...</span>)) opts.</code></pre>
-<p>The <i>type</i> denotes the type of the declared column, which can be either primitive types (int, long, float, and double) or object types (String and user-defined types).
+<pre class="highlight"><code class="hljs r">Table(type col1, <span class="hljs-keyword">...</span> , (type coli, <span class="hljs-keyword">...</span>)) opts.
+</code></pre><p>The <i>type</i> denotes the type of the declared column, which can be either primitive types (int, long, float, and double) or object types (String and user-defined types).
 The parenthesis indicates that the enclosed columns are nested. For example, the following declaration represents a two-column table with the second column nested, representing an adjacency list.</p>
-<pre class="highlight"><code class="python">Edge(int src, (int target)).</code></pre>
+<pre class="highlight"><code class="hljs python">Edge(int src, (int target)).
+</code></pre>
 <p>A distributed table is declared with the partitioning operator [ ] applied to the first column as following:</p>
-<pre class="highlight"><code class="r">Table[type col-name1](type col-name2, <span class="keyword">...</span> , (type col-namei, <span class="keyword">...</span>)) opts.</code></pre>
-<p>The declared table is horizontally partitioned (or, <i>sharded</i> with respect to the value of the partitioning column. By default hash-based partition is applied, and range-based partition is also supported.</p>
+<pre class="highlight"><code class="hljs r">Table[type col-name1](type col-name2, <span class="hljs-keyword">...</span> , (type col-namei, <span class="hljs-keyword">...</span>)) opts.
+</code></pre><p>The declared table is horizontally partitioned (or, <i>sharded</i> with respect to the value of the partitioning column. By default hash-based partition is applied, and range-based partition is also supported.</p>
 <h4 id="-a-class-anchor-name-table-opts-a-b-table-options-b-"><a class="anchor" name="table-opts"></a> <b>Table Options</b></h4>
 <p><i>Table options will be decribed in this section soon!</i></p>
 <h3 id="-a-class-anchor-name-rules-a-b-rules-b-"><a class="anchor" name="rules"></a> <b>Rules</b></h3>
@@ -194,7 +197,7 @@ SociaLite rules are declarative just like SQL queries.</p>
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-05-17T21:21:45.782Z
+				This website was last updated at 2014-05-31T07:21:17.386Z
 			</p>
 		</footer>  -->
 		<footer>
@@ -205,7 +208,7 @@ SociaLite rules are declarative just like SQL queries.</p>
 	</div><!-- /container -->
 
 	<!-- Scripts -->
-	<!--<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"></script><script defer="defer"  src="/scripts/script.js"></script> -->
-	<script defer="defer"  src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="http://socialite-lang.github.io/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"></script><script defer="defer"  src="http://socialite-lang.github.io/scripts/script.js"></script>
+	<!--<script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"></script><script defer="defer"  src="/scripts/script.js"></script><script defer="defer"  src="/scripts/copybutton.js"></script> -->
+	<script defer="defer"  src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script defer="defer"  src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script><script defer="defer"  src="http://socialite-lang.github.io/vendor/twitter-bootstrap/dist/js/bootstrap.min.js"></script><script defer="defer"  src="http://socialite-lang.github.io/scripts/script.js"></script><script defer="defer"  src="http://socialite-lang.github.io/scripts/copybutton.js"></script>
 </body>
 </html>
