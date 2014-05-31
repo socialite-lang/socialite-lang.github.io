@@ -33,7 +33,6 @@ $(document).ready(function() {
                 $jthis.html(txt.substring(3, txt.length-3));
                 $jthis.addClass('hljs-output');
                 $jthis.removeClass('hljs-string');
-                //$jthis.toogleClass('hljs-string');
             });
         }
     });
@@ -41,7 +40,7 @@ $(document).ready(function() {
     $('.copybutton').click(
             function() {
                 var $button = $(this);
-                if ($button.css('text-decoration')=='line-through') {
+                if ($button.css('text-decoration').indexOf('line-through')>=0) {
                     $button.parent().find('.hljs-prompt').show();
                     $button.parent().find('.hljs-output').show();
                     $button.css('text-decoration', 'none');
