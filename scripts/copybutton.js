@@ -40,7 +40,7 @@ $(document).ready(function() {
     $('.copybutton').click(
             function() {
                 var $button = $(this);
-                if ($button.css('text-decoration').indexOf('line-through')>=0) {
+                if ($button.hasClass('prompt-hidden')) {
                     $button.parent().find('.hljs-prompt').show();
                     $button.parent().find('.hljs-output').show();
                     $button.css('text-decoration', 'none');
@@ -51,6 +51,7 @@ $(document).ready(function() {
                     $button.css('text-decoration', 'line-through');
                     $button.attr('title', show_text);
                 }
+                $button.toggleClass('prompt-hidden');
             });
 });
 
