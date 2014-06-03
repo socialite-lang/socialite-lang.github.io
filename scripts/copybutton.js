@@ -25,6 +25,8 @@ $(document).ready(function() {
             $jthis.prepend($button);
             $button.show();
 
+            $jthis.attr("title", "Click >>> on the top-right to hide prompts");
+
             $output = $jthis.find('.hljs-string').filter(function() {
                                 return this.innerHTML.indexOf("'''")==0;});
             $output.each(function(index) {

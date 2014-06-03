@@ -95,11 +95,11 @@
 					
 						<li
 							typeof="sioc:Page"
-							about="/pages/support"
+							about="/pages/community"
 							class=""
 						>
-							<a href="http://socialite-lang.github.io/pages/support" property="dc:title">
-								Support
+							<a href="http://socialite-lang.github.io/pages/community" property="dc:title">
+								Community
 							</a>
 						</li>
 					
@@ -141,7 +141,7 @@
 <p>To start using the SociaLite interactive shell, first <a href="../install">install SociaLite</a> and run <code>bin/socialite</code>. To run a script, pass the script name such as <code>bin/socialite script-name.py</code>.
 The SociaLite interactive shell is basically a Jython shell extended to support SociaLite queries. 
 Normally the shell expects Python code, and SociaLite queries are enclosed in backtik(`), like following.
-Click the <b>&gt;&gt;&gt;</b> on the top-right to hide the prompts.</p>
+Click <b>&gt;&gt;&gt;</b> on the top-right to hide the prompts.</p>
 <pre class="highlight"><code class="hljs python"><span class="hljs-prompt">&gt;&gt;&gt; </span><span class="hljs-keyword">print</span> <span class="hljs-string">"Python code"</span>
 <span class="hljs-string">'''Python code'''</span>
 <span class="hljs-prompt">&gt;&gt;&gt; </span><span class="hljs-comment"># Next two lines are SociaLite code</span>
@@ -270,7 +270,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 <span class="hljs-prompt">&gt;&gt;&gt; </span>`Foaf[i](ff) :- Friend[i](f), Friend[f](ff).`
 </code></pre>
 <p>We declare two distributed tables (with nested second columns) and we compute friends-of-friends with the distributed tables. The rule requires distributed join operation; in the rule body, the two terms -- <em>Friend<a href="f">i</a></em> and <em>Friend<a href="ff">f</a></em> -- have different values in the partitioning column -- <em>i</em> and <em>f</em>. Hence tuples from the first term might need to be sent to other machines for the join operation. That is, tuple {i,f} stored in one machine (determined by <em>i</em>) needs to be transfered to another machine, where tuple {f, ff} is stored. Then the result tuple {i, ff} needs to be transfered back to be stored to Foaf.</p>
-<p>Users may want to re-order the terms in the rule body to minimize data communication for better performance. For example, in the following example, <i>Rule 1</i> has more communication than <i>Rule 2</i>.</p>
+<p>Users may want to re-order the terms in the rule body to minimize data communication for better performance. For example, in the following example, <i>Rule 1</i> has more communication than <i>Rule 2</i>; in <i>Rule 2</i>, the first join operation is done locally where as in <i>Rule 1</i> the first join operation (as well as the second one) is a distributed join.</p>
 <pre class="highlight"><code class="hljs python"><span class="hljs-prompt">&gt;&gt;&gt; </span>`TriangleCount[int i:<span class="hljs-number">0.</span><span class="hljs-number">.0</span>](int cnt).`
 <span class="hljs-prompt">&gt;&gt;&gt; </span>
 <span class="hljs-prompt">&gt;&gt;&gt; </span><span class="hljs-comment"># Rule 1</span>
@@ -291,7 +291,7 @@ If the location operator is used without the range operator -- as in Bar and Qux
 		<!-- <footer>
 			<p class="pull-left">&copy; Company 2014</p>
 			<p class="pull-right">
-				This website was last updated at 2014-05-31T07:54:53.720Z
+				This website was last updated at 2014-06-03T06:16:25.902Z
 			</p>
 		</footer>  -->
 		<footer>

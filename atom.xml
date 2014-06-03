@@ -3,7 +3,7 @@
 	<title>SociaLite</title>
 	<link href="http://socialite-lang.github.io/atom.xml" rel="self"/>
 	<link href="http://socialite-lang.github.io"/>
-	<updated>2014-05-31T07:54:53.720Z</updated>
+	<updated>2014-06-03T06:16:25.902Z</updated>
 	<id>http://socialite-lang.github.io</id>
 	<author>
 		<name>SociaLite-Lang</name>
@@ -113,11 +113,11 @@
 					
 						&lt;li
 							typeof=&quot;sioc:Page&quot;
-							about=&quot;/pages/support&quot;
+							about=&quot;/pages/community&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://socialite-lang.github.io/pages/support&quot; property=&quot;dc:title&quot;&gt;
-								Support
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/community&quot; property=&quot;dc:title&quot;&gt;
+								Community
 							&lt;/a&gt;
 						&lt;/li&gt;
 					
@@ -165,7 +165,7 @@
 		&lt;!-- &lt;footer&gt;
 			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-05-31T07:54:53.720Z
+				This website was last updated at 2014-06-03T06:16:25.902Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
@@ -285,11 +285,11 @@
 					
 						&lt;li
 							typeof=&quot;sioc:Page&quot;
-							about=&quot;/pages/support&quot;
+							about=&quot;/pages/community&quot;
 							class=&quot;&quot;
 						&gt;
-							&lt;a href=&quot;http://socialite-lang.github.io/pages/support&quot; property=&quot;dc:title&quot;&gt;
-								Support
+							&lt;a href=&quot;http://socialite-lang.github.io/pages/community&quot; property=&quot;dc:title&quot;&gt;
+								Community
 							&lt;/a&gt;
 						&lt;/li&gt;
 					
@@ -337,7 +337,7 @@
 		&lt;!-- &lt;footer&gt;
 			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-05-31T07:54:53.720Z
+				This website was last updated at 2014-06-03T06:16:25.902Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
