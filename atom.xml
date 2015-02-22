@@ -3,7 +3,7 @@
 	<title>SociaLite</title>
 	<link href="http://socialite-lang.github.io/atom.xml" rel="self"/>
 	<link href="http://socialite-lang.github.io"/>
-	<updated>2014-06-03T06:16:25.902Z</updated>
+	<updated>2015-02-22T00:45:52.814Z</updated>
 	<id>http://socialite-lang.github.io</id>
 	<author>
 		<name>SociaLite-Lang</name>
@@ -163,9 +163,9 @@
 
 		&lt;!-- Footer --&gt;
 		&lt;!-- &lt;footer&gt;
-			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
+			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2015&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-06-03T06:16:25.902Z
+				This website was last updated at 2015-02-22T00:45:52.814Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
@@ -335,9 +335,9 @@
 
 		&lt;!-- Footer --&gt;
 		&lt;!-- &lt;footer&gt;
-			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2014&lt;/p&gt;
+			&lt;p class=&quot;pull-left&quot;&gt;&amp;copy; Company 2015&lt;/p&gt;
 			&lt;p class=&quot;pull-right&quot;&gt;
-				This website was last updated at 2014-06-03T06:16:25.902Z
+				This website was last updated at 2015-02-22T00:45:52.814Z
 			&lt;/p&gt;
 		&lt;/footer&gt;  --&gt;
 		&lt;footer&gt;
